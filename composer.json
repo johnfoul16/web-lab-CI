@@ -1,14 +1,22 @@
+
 {
-    "name": "my-codeigniter-app",
-    "description": "CodeIgniter application",
+    "name": "johnfoul16/codeigniter-crudy",
+    "description": "CodeIgniter CRUD Application",
     "type": "project",
     "require": {
-        "php": "^8.1"
+        "php": "^7.4 || ^8.0 || ^8.1 || ^8.2"
     },
     "require-dev": {},
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "application/"
         }
-    }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "echo 'CodeIgniter installation complete'"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
