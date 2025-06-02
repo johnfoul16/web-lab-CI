@@ -1,0 +1,17 @@
+<IfModule authz_core_module>
+	Require all denied
+</IfModule>
+<IfModule !authz_core_module>
+	Deny from all
+</IfModule>
+	<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+RewriteEngine On	
+RewriteCond %{THE_REQUEST} /index\.php/([^\s\?]*) [NC]
+RewriteRule ^index\.php/(.*)$ /$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]

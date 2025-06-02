@@ -1,0 +1,14 @@
+{
+    "name": "my-codeigniter-app",
+    "description": "CodeIgniter application",
+    "type": "project",
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

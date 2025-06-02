@@ -1,0 +1,26 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Application specific files
+/writable/logs/*
+!/writable/logs/index.html
+/writable/cache/*
+!/writable/cache/index.html
+/writable/session/*
+!/writable/session/index.html
+
+# User guide
+/user_guide/
+
+# Composer
+/vendor/
+composer.lock
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Environment files
+.env
