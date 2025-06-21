@@ -4,32 +4,32 @@ TechSnap is a user-friendly online shopping system simplifies everyday shopping,
 ## Setup and installation instructions (Web Hosting)
 
 # Set Up Hosting Environment
-● Follow this steps from these YouTube tutorials:
+- Follow this steps from these YouTube tutorials:
 -   𝘩𝘵𝘵𝘱𝘴://𝘸𝘸𝘸.𝘺𝘰𝘶𝘵𝘶𝘣𝘦.𝘤𝘰𝘮/𝘸𝘢𝘵𝘤𝘩?𝘷=𝘬𝘛𝘧𝘶𝘡𝘻𝘶𝘸𝘤𝘻𝘨
 -  𝘩𝘵𝘵𝘱𝘴://𝘸𝘸𝘸.𝘺𝘰𝘶𝘵𝘶𝘣𝘦.𝘤𝘰𝘮/𝘸𝘢𝘵𝘤𝘩?𝘷=𝘠_𝘚𝘊_𝘔𝘟𝘪𝘎𝘓𝘠
-● Created a free hosting account at 𝘪𝘯𝘧𝘪𝘯𝘪𝘵𝘺𝘧𝘳𝘦𝘦.𝘯𝘦𝘵.
-● In the accounts dashboard, click the accounts tab in the navigation bar and look the 'Domains' section.
+- Created a free hosting account at 𝘪𝘯𝘧𝘪𝘯𝘪𝘵𝘺𝘧𝘳𝘦𝘦.𝘯𝘦𝘵.
+- In the accounts dashboard, click the accounts tab in the navigation bar and look the 'Domains' section.
 - Click 'Add Domain' button, after redirecting, click 'Add Subdomain' under the Subdomain which is the only free domain that InfinityFree offers. 
 - After clicking, you can type your desired domain name and the free domain extension. 
 
 # Deploy the Application
-● Upload the CodeIgniter 3 project files to the htdocs folder of the
+- Upload the CodeIgniter 3 project files to the htdocs folder of the
 InfinityFree’s online file manager using an FTP client as what the hosting platform recommended to avoid broken file uploads.
-    - Set the hostname, username, password, and port in the FileZilla (FTP) app to connect in the InfinityFree's server. 
-    - This credentials can be found under the 'FTP Details' tab of the InfinityFree's account dashboard.
-    - After connecting to the server, manage your project files or the entire folder remotely. The 'Local Site' in the left side of the app is your computer's file directory while the 'Remote Site' on the right side is the server's file directory.
-    - Simply drag all the files from your project's directory in the Local Site (if necessary) to the 'Remote Site' side to upload them remotely.
-    - If succesful, you can configure the content of each file of your project in the InfinityFree's online file manager which can be found in the account's dashboard for the following steps.
-● Navigate to 𝘩𝘵𝘥𝘰𝘤𝘴/𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘵𝘪𝘰𝘯/𝘤𝘰𝘯𝘧𝘪𝘨/𝘤𝘰𝘯𝘧𝘪𝘨.𝘱𝘩𝘱 of the online file manager, right-click the file then find and click the edit. 
-    - Set the correct base URL using the hosting platform’s provided free subdomain (𝘩𝘵𝘵𝘱𝘴://𝘵𝘦𝘤𝘩𝘴𝘯𝘢𝘱 𝘪𝘯𝘧𝘪𝘯𝘪𝘵𝘺𝘧𝘳𝘦𝘦𝘢𝘱𝘱.𝘤𝘰𝘮/) and click save.
-● Since InfinityFree also host database server, navigate to the accounts dashboard and click the 'Control Panel'.
-    - Scroll and look for the 'DATABASES' section then click 'MySQl Databases'.
-    - Look for 'Create New Database' section. Under 'New Database', input your desired database name then click create database afterwards. 
-    - The new database will appear below the 'Current Databases' section, simply click the 'Admin' button on the right side of a database in the list to redirect to its database server.
-    - You can manually setup the tables or import an sql file at your discretion.
+- Set the hostname, username, password, and port in the FileZilla (FTP) app to connect in the InfinityFree's server. 
+- This credentials can be found under the 'FTP Details' tab of the InfinityFree's account dashboard.
+- After connecting to the server, manage your project files or the entire folder remotely. The 'Local Site' in the left side of the app is your computer's file directory while the 'Remote Site' on the right side is the server's file directory.
+- Simply drag all the files from your project's directory in the Local Site (if necessary) to the 'Remote Site' side to upload them remotely.
+- If succesful, you can configure the content of each file of your project in the InfinityFree's online file manager which can be found in the account's dashboard for the following steps.
+- Navigate to 𝘩𝘵𝘥𝘰𝘤𝘴/𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘵𝘪𝘰𝘯/𝘤𝘰𝘯𝘧𝘪𝘨/𝘤𝘰𝘯𝘧𝘪𝘨.𝘱𝘩𝘱 of the online file manager, right-click the file then find and click the edit. 
+- Set the correct base URL using the hosting platform’s provided free subdomain (𝘩𝘵𝘵𝘱𝘴://𝘵𝘦𝘤𝘩𝘴𝘯𝘢𝘱 𝘪𝘯𝘧𝘪𝘯𝘪𝘵𝘺𝘧𝘳𝘦𝘦𝘢𝘱𝘱.𝘤𝘰𝘮/) and click save.
+- Since InfinityFree also host database server, navigate to the accounts dashboard and click the 'Control Panel'.
+- Scroll and look for the 'DATABASES' section then click 'MySQl Databases'.
+- Look for 'Create New Database' section. Under 'New Database', input your desired database name then click create database afterwards. 
+- The new database will appear below the 'Current Databases' section, simply click the 'Admin' button on the right side of a database in the list to redirect to its database server.
+- You can manually setup the tables or import an sql file at your discretion.
 
 # Environment Variables
-● Go the online file manager and navigate to 𝘩𝘵𝘥𝘰𝘤𝘴/𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘵𝘪𝘰𝘯/𝘤𝘰𝘯𝘧𝘪𝘨/𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦.𝘱𝘩𝘱 right-click the file then find and click the edit.
+- Go the online file manager and navigate to 𝘩𝘵𝘥𝘰𝘤𝘴/𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘵𝘪𝘰𝘯/𝘤𝘰𝘯𝘧𝘪𝘨/𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦.𝘱𝘩𝘱 right-click the file then find and click the edit.
     - Configure the database details such as hostname, username, password, and database using the 'MySQL Connection Details' in the infinityfree account's dashboard under the 'MySQL Databases' tab. Refer to the example below:
     - 'hostname' => 'sql105.infinityfree.com',
     - 'username' => 'if0_39134217',
