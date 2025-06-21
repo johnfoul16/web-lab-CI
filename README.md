@@ -119,9 +119,9 @@ Email: user@example.com
 Password: password123 (You can change this after logging in)
 
 Features
-This e-commerce application provides the following core functionalities:
+## This e-commerce application provides the following core functionalities:
 
-User Module
+### User Module
 -  User Registration & Login: Secure user authentication with password hashing and session management.
 
 -  User Dashboard: Personalized landing page after login.
@@ -134,7 +134,7 @@ User Module
 
 -  View Order Details: Detailed view of individual orders.
 
-Product Module
+### Product Module
 -  Product Listing: Browse all available products in the shop.
 
 -  Product Search: Filter products by name or description.
@@ -145,10 +145,10 @@ Product Module
 
 -  Stock Management: Automatic deduction of product stock upon order placement.
 
-Admin Module (Requires 'admin' role)
+### Admin Module (Requires 'admin' role)
 -  Admin Dashboard & Reports: Summary widgets displaying total sales, orders, and user count, along with recent orders and top-selling products.
 
-Product Management (CRUD):
+### Product Management (CRUD):
 
 -  Add Products: Create new product entries with name, description, price, stock, and image upload.
 
