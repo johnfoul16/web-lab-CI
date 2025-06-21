@@ -73,24 +73,24 @@ Open database.php.
 Find the $db['default'] array and update your database credentials:
 
 $db['default'] = array(
-    'dsn'      => '',
-    'hostname' => 'localhost',
-    'username' => 'root', // Your MySQL username (default for XAMPP)
-    'password' => '',     // Your MySQL password (default for XAMPP is empty)
-    'database' => 'ecommerce_db', // The name of the database you created
-    'dbdriver' => 'mysqli',
-    'dbprefix' => '',
-    'pconnect' => FALSE,
-    'db_debug' => (ENVIRONMENT !== 'production'),
-    'cache_on' => FALSE,
-    'cachedir' => '',
-    'char_set' => 'utf8',
-    'dbcollat' => 'utf8_general_ci',
-    'swap_pre' => '',
-    'encrypt'  => FALSE,
-    'compress' => FALSE,
-    'stricton' => FALSE,
-    'failover' => array(),
+    'dsn'      => ''
+    'hostname' => 'localhost'
+    'username' => 'root'
+    'password' => '' 
+    'database' => 'ecommerce_db'
+    'dbdriver' => 'mysqli'
+    'dbprefix' => ''
+    'pconnect' => FALSE
+    'db_debug' => (ENVIRONMENT !== 'production')
+    'cache_on' => FALSE
+    'cachedir' => ''
+    'char_set' => 'utf8'
+    'dbcollat' => 'utf8_general_ci'
+    'swap_pre' => ''
+    'encrypt'  => FALSE
+    'compress' => FALSE
+    'stricton' => FALSE
+    'failover' => array()
     'save_queries' => TRUE
 );
 
@@ -156,9 +156,9 @@ Features
 
 -  Delete Products: Remove products from the database and associated image files from the server.
 
-*******************
-User Management:
-*******************
+
+### User Management:
+
 
 -  View all registered users.
 
@@ -166,9 +166,9 @@ User Management:
 
 -  Delete user accounts (with safeguards against self-deletion).
 
-*******************
-General Features
-*******************
+
+### General Features
+
 
 -  Flashdata Notifications: Provides transient feedback messages (success/error) after user actions.
 
