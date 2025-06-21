@@ -1,8 +1,15 @@
+###################
 CodeIgniter E-commerce Shop
+###################
+
+*******************
 System Title and Description
+*******************
 This is a simple yet functional E-commerce Web Application built with the CodeIgniter 3 PHP framework. It allows users to browse products, add them to a shopping cart, and place orders. Administrators have full control over product management, user management, and can view sales reports.
 
+*******************
 Setup and Installation Instructions (Local Environment - XAMPP)
+*******************
 Follow these steps to get the project up and running on your local machine using XAMPP.
 
 Prerequisites
@@ -99,9 +106,9 @@ Admin Account:
 
 Username: admin
 
-Email: admin@example.com
+Email: admin@gmail.com
 
-Password: password123 (You can change this after logging in)
+Password: 1234567890
 
 Standard User Account:
 
@@ -115,72 +122,80 @@ Features
 This e-commerce application provides the following core functionalities:
 
 User Module
-User Registration & Login: Secure user authentication with password hashing and session management.
+-  `User Registration & Login: Secure user authentication with password hashing and session management.
 
-User Dashboard: Personalized landing page after login.
+-  `User Dashboard: Personalized landing page after login.
 
-User Profile Management: Ability to view and update personal details (username, email).
+-  `User Profile Management: Ability to view and update personal details (username, email).
 
-Password Change: Secure method for users to update their password.
+-  `Password Change: Secure method for users to update their password.
 
-Order History: Users can view a list of their past orders.
+-  `Order History: Users can view a list of their past orders.
 
-View Order Details: Detailed view of individual orders.
+-  `View Order Details: Detailed view of individual orders.
 
 Product Module
-Product Listing: Browse all available products in the shop.
+-  `Product Listing: Browse all available products in the shop.
 
-Product Search: Filter products by name or description.
+-  `Product Search: Filter products by name or description.
 
-Shopping Cart: Add, view, and remove items from a persistent shopping cart.
+-  `Shopping Cart: Add, view, and remove items from a persistent shopping cart.
 
-Checkout Process: Complete orders with delivery details and payment method selection.
+-  `Checkout Process: Complete orders with delivery details and payment method selection.
 
-Stock Management: Automatic deduction of product stock upon order placement.
+-  `Stock Management: Automatic deduction of product stock upon order placement.
 
 Admin Module (Requires 'admin' role)
-Admin Dashboard & Reports: Summary widgets displaying total sales, orders, and user count, along with recent orders and top-selling products.
+-  `Admin Dashboard & Reports: Summary widgets displaying total sales, orders, and user count, along with recent orders and top-selling products.
 
 Product Management (CRUD):
 
-Add Products: Create new product entries with name, description, price, stock, and image upload.
+-  `Add Products: Create new product entries with name, description, price, stock, and image upload.
 
-Edit Products: Modify existing product details, including image replacement.
+-  `Edit Products: Modify existing product details, including image replacement.
 
-Delete Products: Remove products from the database and associated image files from the server.
+-  `Delete Products: Remove products from the database and associated image files from the server.
 
+*******************
 User Management:
+*******************
 
-View all registered users.
+-  `View all registered users.
 
-Edit user details (username, email, role, password).
+-  `Edit user details (username, email, role, password).
 
-Delete user accounts (with safeguards against self-deletion).
+-  `Delete user accounts (with safeguards against self-deletion).
 
+*******************
 General Features
-Flashdata Notifications: Provides transient feedback messages (success/error) after user actions.
+*******************
 
-CSRF Protection: Implemented for all form submissions to prevent Cross-Site Request Forgery attacks.
+-  `Flashdata Notifications: Provides transient feedback messages (success/error) after user actions.
 
-Responsive Design: Basic responsive layout using custom CSS for adaptability across devices.
+-  `CSRF Protection: Implemented for all form submissions to prevent Cross-Site Request Forgery attacks.
 
-Secure Password Hashing: Uses password_hash() (Bcrypt) for storing user passwords.
+-  `Responsive Design: Basic responsive layout using custom CSS for adaptability across devices.
 
-Image Upload Validation: Server-side validation for image type and size.
+-  `Secure Password Hashing: Uses password_hash() (Bcrypt) for storing user passwords.
 
-URL Helper Integration: Dynamic URL generation for improved portability.
+-  `Image Upload Validation: Server-side validation for image type and size.
 
-Modular Architecture: Built with CodeIgniter's MVC pattern for clear separation of concerns.
+-  `URL Helper Integration: Dynamic URL generation for improved portability.
 
+-  `Modular Architecture: Built with CodeIgniter's MVC pattern for clear separation of concerns.
+
+*******************
 Technologies Used
-Backend: PHP 7.x
+*******************
 
-Framework: CodeIgniter 3
+-  `Backend: PHP 7.x
 
-Database: MySQL (via phpMyAdmin for local setup)
+-  `Framework: CodeIgniter 3
 
-Frontend: HTML5, CSS3, JavaScript
+-  `Database: MySQL (via phpMyAdmin for local setup)
 
-Styling: Bootstrap Icons
+-  `Frontend: HTML5, CSS3, JavaScript
 
-Version Control: Git & GitHub
+-  `Styling: Bootstrap Icons
+
+-  `Version Control: Git & GitHub
