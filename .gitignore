@@ -1,0 +1,22 @@
+# CodeIgniter 3 specific ignores
+/application/config/database.php
+/application/config/config.php
+/application/logs/
+/assets/uploads/ # Ignore user uploaded files
+/system/user_guide/
+/vendor/ # If you use Composer
+
+# Composer specific (if applicable)
+/composer.phar
+/composer.lock
+
+# Common OS and editor files
+.DS_Store
+.env
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.bak
+*.log
+.idea/
+nbproject/
