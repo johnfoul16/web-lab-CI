@@ -1,18 +1,18 @@
-###################
-CodeIgniter E-commerce Shop
-###################
 
-*******************
-System Title and Description
-*******************
+# CodeIgniter E-commerce Shop
+
+
+
+## System Title and Description
+
 This is a simple yet functional E-commerce Web Application built with the CodeIgniter 3 PHP framework. It allows users to browse products, add them to a shopping cart, and place orders. Administrators have full control over product management, user management, and can view sales reports.
 
-*******************
-Setup and Installation Instructions (Local Environment - XAMPP)
-*******************
+
+## Setup and Installation Instructions (Local Environment - XAMPP)
+
 Follow these steps to get the project up and running on your local machine using XAMPP.
 
-Prerequisites
+## Prerequisites
 XAMPP (or equivalent web server stack like WAMP/MAMP/Laragon) with:
 
 Apache
@@ -23,7 +23,7 @@ PHP (version compatible with CodeIgniter 3, e.g., PHP 7.x)
 
 Git installed on your system.
 
-Installation Steps
+##  Installation Steps
 Clone the Repository:
 Open your Git Bash or terminal and navigate to your XAMPP's htdocs directory (e.g., C:\xampp\htdocs). Then clone your project:
 
@@ -122,80 +122,80 @@ Features
 This e-commerce application provides the following core functionalities:
 
 User Module
--  `User Registration & Login: Secure user authentication with password hashing and session management.
+-  User Registration & Login: Secure user authentication with password hashing and session management.
 
--  `User Dashboard: Personalized landing page after login.
+-  User Dashboard: Personalized landing page after login.
 
--  `User Profile Management: Ability to view and update personal details (username, email).
+-  User Profile Management: Ability to view and update personal details (username, email).
 
--  `Password Change: Secure method for users to update their password.
+-  Password Change: Secure method for users to update their password.
 
--  `Order History: Users can view a list of their past orders.
+-  Order History: Users can view a list of their past orders.
 
--  `View Order Details: Detailed view of individual orders.
+-  View Order Details: Detailed view of individual orders.
 
 Product Module
--  `Product Listing: Browse all available products in the shop.
+-  Product Listing: Browse all available products in the shop.
 
--  `Product Search: Filter products by name or description.
+-  Product Search: Filter products by name or description.
 
--  `Shopping Cart: Add, view, and remove items from a persistent shopping cart.
+-  Shopping Cart: Add, view, and remove items from a persistent shopping cart.
 
--  `Checkout Process: Complete orders with delivery details and payment method selection.
+-  Checkout Process: Complete orders with delivery details and payment method selection.
 
--  `Stock Management: Automatic deduction of product stock upon order placement.
+-  Stock Management: Automatic deduction of product stock upon order placement.
 
 Admin Module (Requires 'admin' role)
--  `Admin Dashboard & Reports: Summary widgets displaying total sales, orders, and user count, along with recent orders and top-selling products.
+-  Admin Dashboard & Reports: Summary widgets displaying total sales, orders, and user count, along with recent orders and top-selling products.
 
 Product Management (CRUD):
 
--  `Add Products: Create new product entries with name, description, price, stock, and image upload.
+-  Add Products: Create new product entries with name, description, price, stock, and image upload.
 
--  `Edit Products: Modify existing product details, including image replacement.
+-  Edit Products: Modify existing product details, including image replacement.
 
--  `Delete Products: Remove products from the database and associated image files from the server.
+-  Delete Products: Remove products from the database and associated image files from the server.
 
 *******************
 User Management:
 *******************
 
--  `View all registered users.
+-  View all registered users.
 
--  `Edit user details (username, email, role, password).
+-  Edit user details (username, email, role, password).
 
--  `Delete user accounts (with safeguards against self-deletion).
+-  Delete user accounts (with safeguards against self-deletion).
 
 *******************
 General Features
 *******************
 
--  `Flashdata Notifications: Provides transient feedback messages (success/error) after user actions.
+-  Flashdata Notifications: Provides transient feedback messages (success/error) after user actions.
 
--  `CSRF Protection: Implemented for all form submissions to prevent Cross-Site Request Forgery attacks.
+-  CSRF Protection: Implemented for all form submissions to prevent Cross-Site Request Forgery attacks.
 
--  `Responsive Design: Basic responsive layout using custom CSS for adaptability across devices.
+-  Responsive Design: Basic responsive layout using custom CSS for adaptability across devices.
 
--  `Secure Password Hashing: Uses password_hash() (Bcrypt) for storing user passwords.
+-  Secure Password Hashing: Uses password_hash() (Bcrypt) for storing user passwords.
 
--  `Image Upload Validation: Server-side validation for image type and size.
+-  Image Upload Validation: Server-side validation for image type and size.
 
--  `URL Helper Integration: Dynamic URL generation for improved portability.
+-  URL Helper Integration: Dynamic URL generation for improved portability.
 
--  `Modular Architecture: Built with CodeIgniter's MVC pattern for clear separation of concerns.
+-  Modular Architecture: Built with CodeIgniter's MVC pattern for clear separation of concerns.
 
 *******************
 Technologies Used
 *******************
 
--  `Backend: PHP 7.x
+-  Backend: PHP 7.x
 
--  `Framework: CodeIgniter 3
+-  Framework: CodeIgniter 3
 
--  `Database: MySQL (via phpMyAdmin for local setup)
+-  Database: MySQL (via phpMyAdmin for local setup)
 
--  `Frontend: HTML5, CSS3, JavaScript
+-  Frontend: HTML5, CSS3, JavaScript
 
--  `Styling: Bootstrap Icons
+-  Styling: Bootstrap Icons
 
--  `Version Control: Git & GitHub
+-  Version Control: Git & GitHub
