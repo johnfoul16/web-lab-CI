@@ -1,71 +1,186 @@
-###################
-What is CodeIgniter
-###################
+CodeIgniter E-commerce Shop
+System Title and Description
+This is a simple yet functional E-commerce Web Application built with the CodeIgniter 3 PHP framework. It allows users to browse products, add them to a shopping cart, and place orders. Administrators have full control over product management, user management, and can view sales reports.
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Setup and Installation Instructions (Local Environment - XAMPP)
+Follow these steps to get the project up and running on your local machine using XAMPP.
 
-*******************
-Release Information
-*******************
+Prerequisites
+XAMPP (or equivalent web server stack like WAMP/MAMP/Laragon) with:
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Apache
 
-**************************
-Changelog and New Features
-**************************
+MySQL
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+PHP (version compatible with CodeIgniter 3, e.g., PHP 7.x)
 
-*******************
-Server Requirements
-*******************
+Git installed on your system.
 
-PHP version 5.6 or newer is recommended.
+Installation Steps
+Clone the Repository:
+Open your Git Bash or terminal and navigate to your XAMPP's htdocs directory (e.g., C:\xampp\htdocs). Then clone your project:
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+cd C:\xampp\htdocs
+git clone https://github.com/johnfoul16/web-lab-CI.git ta2
 
-************
-Installation
-************
+This will clone the repository into a folder named ta2.
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+Import Database:
 
-*******
-License
-*******
+Start Apache and MySQL from your XAMPP control panel.
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Open your web browser and go to http://localhost/phpmyadmin/.
 
-*********
-Resources
-*********
+Click on "New" in the left sidebar to create a new database.
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+Enter ecommerce_db as the database name and click "Create".
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+Select the newly created ecommerce_db from the left sidebar.
 
-***************
-Acknowledgement
-***************
+Click on the "Import" tab.
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Click "Choose File" and select the ecommerce_db.sql file located in the root of your ta2 project folder (e.g., C:\xampp\htdocs\ta2\ecommerce_db.sql).
+
+Scroll down and click "Go" to import the database.
+
+Configure CodeIgniter:
+
+Navigate to your project's configuration files: C:\xampp\htdocs\ta2\application\config\
+
+config.php:
+
+Open config.php.
+
+Find $config['base_url'] = ''; and change it to:
+
+$config['base_url'] = 'http://localhost/ta2/';
+
+Find $config['csrf_protection'] = FALSE; and ensure it's set to TRUE for security:
+
+$config['csrf_protection'] = TRUE;
+
+database.php:
+
+Open database.php.
+
+Find the $db['default'] array and update your database credentials:
+
+$db['default'] = array(
+    'dsn'      => '',
+    'hostname' => 'localhost',
+    'username' => 'root', // Your MySQL username (default for XAMPP)
+    'password' => '',     // Your MySQL password (default for XAMPP is empty)
+    'database' => 'ecommerce_db', // The name of the database you created
+    'dbdriver' => 'mysqli',
+    'dbprefix' => '',
+    'pconnect' => FALSE,
+    'db_debug' => (ENVIRONMENT !== 'production'),
+    'cache_on' => FALSE,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt'  => FALSE,
+    'compress' => FALSE,
+    'stricton' => FALSE,
+    'failover' => array(),
+    'save_queries' => TRUE
+);
+
+Run the Application:
+
+Open your web browser and go to:
+http://localhost/ta2/
+
+Default Admin/User Credentials
+For initial testing and demonstration, you can use the following credentials:
+
+Admin Account:
+
+Username: admin
+
+Email: admin@example.com
+
+Password: password123 (You can change this after logging in)
+
+Standard User Account:
+
+Username: user
+
+Email: user@example.com
+
+Password: password123 (You can change this after logging in)
+
+Features
+This e-commerce application provides the following core functionalities:
+
+User Module
+User Registration & Login: Secure user authentication with password hashing and session management.
+
+User Dashboard: Personalized landing page after login.
+
+User Profile Management: Ability to view and update personal details (username, email).
+
+Password Change: Secure method for users to update their password.
+
+Order History: Users can view a list of their past orders.
+
+View Order Details: Detailed view of individual orders.
+
+Product Module
+Product Listing: Browse all available products in the shop.
+
+Product Search: Filter products by name or description.
+
+Shopping Cart: Add, view, and remove items from a persistent shopping cart.
+
+Checkout Process: Complete orders with delivery details and payment method selection.
+
+Stock Management: Automatic deduction of product stock upon order placement.
+
+Admin Module (Requires 'admin' role)
+Admin Dashboard & Reports: Summary widgets displaying total sales, orders, and user count, along with recent orders and top-selling products.
+
+Product Management (CRUD):
+
+Add Products: Create new product entries with name, description, price, stock, and image upload.
+
+Edit Products: Modify existing product details, including image replacement.
+
+Delete Products: Remove products from the database and associated image files from the server.
+
+User Management:
+
+View all registered users.
+
+Edit user details (username, email, role, password).
+
+Delete user accounts (with safeguards against self-deletion).
+
+General Features
+Flashdata Notifications: Provides transient feedback messages (success/error) after user actions.
+
+CSRF Protection: Implemented for all form submissions to prevent Cross-Site Request Forgery attacks.
+
+Responsive Design: Basic responsive layout using custom CSS for adaptability across devices.
+
+Secure Password Hashing: Uses password_hash() (Bcrypt) for storing user passwords.
+
+Image Upload Validation: Server-side validation for image type and size.
+
+URL Helper Integration: Dynamic URL generation for improved portability.
+
+Modular Architecture: Built with CodeIgniter's MVC pattern for clear separation of concerns.
+
+Technologies Used
+Backend: PHP 7.x
+
+Framework: CodeIgniter 3
+
+Database: MySQL (via phpMyAdmin for local setup)
+
+Frontend: HTML5, CSS3, JavaScript
+
+Styling: Bootstrap Icons
+
+Version Control: Git & GitHub
