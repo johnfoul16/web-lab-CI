@@ -7,7 +7,34 @@
 
 This is a simple yet functional E-commerce Web Application built with the CodeIgniter 3 PHP framework. It allows users to browse products, add them to a shopping cart, and place orders. Administrators have full control over product management, user management, and can view sales reports.
 
+## Setup and Installation Instructions (Live Environment - InfinityFree Hosting)
 
+• Hosting platform: InfinityFree Hosting
+• Configuration steps taken
+1. Set Up Hosting Environment
+● Created a free hosting account at infinityfree.net.
+● Followed the steps in the YouTube tutorials:
+○ https://www.youtube.com/watch?v=kTfuZzuwczg
+○ https://www.youtube.com/watch?v=Y_SC_MXiGLY
+● Used InfinityFree’s File Manager to configure the files and a File
+Transfer Protocol (FileZilla) to upload files remotely in the web
+hosting accounts (GitHub repository not used).
+2. Deploy the application
+● Upload the CodeIgniter 3 project files to the htdocs folder of the
+InfinityFree’s file manager using FileZilla.
+● Set the correct base URL in application/config/config.php
+using the hosting platform’s free subdomain
+(https://techsnap.infinityfreeapp.com/).
+3. Environment Variables
+● The database credentials were configured in
+application/config/database.php using InfinityFree’s
+provided details:
+○ 'hostname' => 'sql105.infinityfree.com',
+○ 'username' => 'if0_39134217',
+○ 'password' => '[your actual password here]',
+○ 'database' => 'if0_39134217_ecommerce_db'
+
+*******************************************************************************************************
 ## Setup and Installation Instructions (Local Environment - XAMPP)
 
 Follow these steps to get the project up and running on your local machine using XAMPP.
