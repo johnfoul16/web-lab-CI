@@ -28,9 +28,9 @@ Clone the Repository:
 Open your Git Bash or terminal and navigate to your XAMPP's htdocs directory (e.g., C:\xampp\htdocs). Then clone your project:
 
 cd C:\xampp\htdocs
-git clone https://github.com/johnfoul16/web-lab-CI.git ta2
+git clone https://github.com/johnfoul16/web-lab-CI.git ta3
 
-This will clone the repository into a folder named ta2.
+This will clone the repository into a folder named ta3.
 
 Import Database:
 
@@ -46,7 +46,7 @@ Select the newly created ecommerce_db from the left sidebar.
 
 Click on the "Import" tab.
 
-Click "Choose File" and select the ecommerce_db.sql file located in the root of your ta2 project folder (e.g., C:\xampp\htdocs\ta2\ecommerce_db.sql).
+Click "Choose File" and select the ecommerce_db.sql file located in the root of your ta3 project folder (e.g., C:\xampp\htdocs\ta3\ecommerce_db.sql).
 
 Scroll down and click "Go" to import the database.
 
@@ -60,7 +60,7 @@ Open config.php.
 
 Find $config['base_url'] = ''; and change it to:
 
-$config['base_url'] = 'http://localhost/ta2/';
+$config['base_url'] = 'http://localhost/ta3/';
 
 Find $config['csrf_protection'] = FALSE; and ensure it's set to TRUE for security:
 
@@ -97,7 +97,7 @@ $db['default'] = array(
 Run the Application:
 
 Open your web browser and go to:
-http://localhost/ta2/
+http://localhost/ta3/
 
 Default Admin/User Credentials
 For initial testing and demonstration, you can use the following credentials:
@@ -116,7 +116,7 @@ Username: user
 
 Email: user@example.com
 
-Password: password123 (You can change this after logging in)
+Password: 1234567890 (You can change this after logging in)
 
 Features
 ## This e-commerce application provides the following core functionalities:
