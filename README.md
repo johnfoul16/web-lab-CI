@@ -1,40 +1,44 @@
+## TechSnap 
+TechSnap is a user-friendly online shopping system simplifies everyday shopping, allowing customers to shop from home and receive deliveries. Ideally for gaming enthusiasts who likes gaming peripherals. It allows users to create accounts, manage profiles, browse products, add items to cart, track deliveries and view order history. Administrators can manage inventory and dashboards, ensuring speed, convenience, and accessibility.
 
-# CodeIgniter E-commerce Shop
+## Setup and installation instructions (Web Hosting)
 
+# Set Up Hosting Environment
+● Follow this steps from these YouTube tutorials:
+-   𝘩𝘵𝘵𝘱𝘴://𝘸𝘸𝘸.𝘺𝘰𝘶𝘵𝘶𝘣𝘦.𝘤𝘰𝘮/𝘸𝘢𝘵𝘤𝘩?𝘷=𝘬𝘛𝘧𝘶𝘡𝘻𝘶𝘸𝘤𝘻𝘨
+-  𝘩𝘵𝘵𝘱𝘴://𝘸𝘸𝘸.𝘺𝘰𝘶𝘵𝘶𝘣𝘦.𝘤𝘰𝘮/𝘸𝘢𝘵𝘤𝘩?𝘷=𝘠_𝘚𝘊_𝘔𝘟𝘪𝘎𝘓𝘠
+● Created a free hosting account at 𝘪𝘯𝘧𝘪𝘯𝘪𝘵𝘺𝘧𝘳𝘦𝘦.𝘯𝘦𝘵.
+● In the accounts dashboard, click the accounts tab in the navigation bar and look the 'Domains' section.
+- Click 'Add Domain' button, after redirecting, click 'Add Subdomain' under the Subdomain which is the only free domain that InfinityFree offers. 
+- After clicking, you can type your desired domain name and the free domain extension. 
 
+# Deploy the Application
+● Upload the CodeIgniter 3 project files to the htdocs folder of the
+InfinityFree’s online file manager using an FTP client as what the hosting platform recommended to avoid broken file uploads.
+    - Set the hostname, username, password, and port in the FileZilla (FTP) app to connect in the InfinityFree's server. 
+    - This credentials can be found under the 'FTP Details' tab of the InfinityFree's account dashboard.
+    - After connecting to the server, manage your project files or the entire folder remotely. The 'Local Site' in the left side of the app is your computer's file directory while the 'Remote Site' on the right side is the server's file directory.
+    - Simply drag all the files from your project's directory in the Local Site (if necessary) to the 'Remote Site' side to upload them remotely.
+    - If succesful, you can configure the content of each file of your project in the InfinityFree's online file manager which can be found in the account's dashboard for the following steps.
+● Navigate to 𝘩𝘵𝘥𝘰𝘤𝘴/𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘵𝘪𝘰𝘯/𝘤𝘰𝘯𝘧𝘪𝘨/𝘤𝘰𝘯𝘧𝘪𝘨.𝘱𝘩𝘱 of the online file manager, right-click the file then find and click the edit. 
+    - Set the correct base URL using the hosting platform’s provided free subdomain (𝘩𝘵𝘵𝘱𝘴://𝘵𝘦𝘤𝘩𝘴𝘯𝘢𝘱 𝘪𝘯𝘧𝘪𝘯𝘪𝘵𝘺𝘧𝘳𝘦𝘦𝘢𝘱𝘱.𝘤𝘰𝘮/) and click save.
+● Since InfinityFree also host database server, navigate to the accounts dashboard and click the 'Control Panel'.
+    - Scroll and look for the 'DATABASES' section then click 'MySQl Databases'.
+    - Look for 'Create New Database' section. Under 'New Database', input your desired database name then click create database afterwards. 
+    - The new database will appear below the 'Current Databases' section, simply click the 'Admin' button on the right side of a database in the list to redirect to its database server.
+    - You can manually setup the tables or import an sql file at your discretion.
 
-## System Title and Description
+# Environment Variables
+● Go the online file manager and navigate to 𝘩𝘵𝘥𝘰𝘤𝘴/𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘵𝘪𝘰𝘯/𝘤𝘰𝘯𝘧𝘪𝘨/𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦.𝘱𝘩𝘱 right-click the file then find and click the edit.
+    - Configure the database details such as hostname, username, password, and database using the 'MySQL Connection Details' in the infinityfree account's dashboard under the 'MySQL Databases' tab. Refer to the example below:
+    - 'hostname' => 'sql105.infinityfree.com',
+    - 'username' => 'if0_39134217',
+    - 'password' => '[your actual password here]',
+    - 'database' => 'if0_39134217_ecommerce_db'
 
-This is a simple yet functional E-commerce Web Application built with the CodeIgniter 3 PHP framework. It allows users to browse products, add them to a shopping cart, and place orders. Administrators have full control over product management, user management, and can view sales reports.
+## Note
+It can take up to 72 hours for new domains to be accessible everywhere. This was due to DNS propagation delay, which is normal for new subdomains on shared/free hosting platforms. Try waiting for 4 to 24 hours (72 houts if possible) then check if the website is functional.
 
-## Setup and Installation Instructions (Live Environment - InfinityFree Hosting)
-
-### Hosting platform: InfinityFree Hosting
-#### Configuration steps taken
-1. Set Up Hosting Environment
-- Created a free hosting account at infinityfree.net.
-- Followed the steps in the YouTube tutorials:
-- https://www.youtube.com/watch?v=kTfuZzuwczg
-- https://www.youtube.com/watch?v=Y_SC_MXiGLY
-- Used InfinityFree’s File Manager to configure the files and a File
-Transfer Protocol (FileZilla) to upload files remotely in the web
-hosting accounts (GitHub repository not used).
-2. Deploy the application
-- Upload the CodeIgniter 3 project files to the htdocs folder of the
-InfinityFree’s file manager using FileZilla.
-- Set the correct base URL in application/config/config.php
-using the hosting platform’s free subdomain
-(https://techsnap.infinityfreeapp.com/).
-3. Environment Variables
-- The database credentials were configured in
-application/config/database.php using InfinityFree’s
-provided details:
-- 'hostname' => 'sql105.infinityfree.com',
-- 'username' => 'if0_39134217',
-- 'password' => '[your actual password here]',
-- 'database' => 'if0_39134217_ecommerce_db'
-
-*******************************************************************************************************
 ## Setup and Installation Instructions (Local Environment - XAMPP)
 
 Follow these steps to get the project up and running on your local machine using XAMPP.
